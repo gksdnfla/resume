@@ -3,6 +3,10 @@ var pageCount = 0;
 var pageMax = 4;
 var playCheck = true;
 var oPageBtn = document.getElementById('pageBtn');
+window.onload = function(){
+  //显示图片
+  document.getElementById('profile').src = profile();
+}
 //年龄计算
 (function(){
   var oDate = new Date();
