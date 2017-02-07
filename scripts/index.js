@@ -44,9 +44,31 @@ for(var i=0;i<pageMax;i++){
     }
   })(i);
 }
+
 //滚轮事件
 scrollEvent(scrollUp,scrollDown);
 
+//技能透明度调整
+function pageTwoAni(){
+  var json = {
+    html : 0.95,
+    css :0.95,
+    js : 0.80,
+    angular : 0.50,
+    react : 0.50,
+    vue : 0.30,
+    JQuery : 0.70,
+    zepto : 0.70,
+    sea : 0.90,
+    artTemplate : 0.90,
+    less : 0.90
+  }
+  var aLabel = document.getElementById('skill').getElementsByTagName('span');
+
+  for(var i=0;i<aLabel.length;i++){
+    aLabel[i].style.opacity = json[aLabel[i].className];
+  }
+};
 
 function scrollEvent(fnUp,fnDown){
   if(navigator.userAgent.toLowerCase().indexOf('firefox')!=-1){
@@ -128,6 +150,11 @@ function move(min,max){
 function moveEnd(){
   playCheck = false;
   addShadow(pageCount);
+  switch(pageCount){
+    case 1:
+      pageTwoAni();
+      break;
+  }
 }
 function addShadow(pageCount){
   var aPage = document.getElementById('page'+pageCount).children;
