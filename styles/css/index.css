@@ -8,6 +8,7 @@ body{
   left:0;
   top:0;
   transition:1s ease;
+  z-index:0;
 }
 .page div{
   width:50%;
@@ -80,9 +81,14 @@ body{
   opacity:0;
   animation:2s opacityAni 3s forwards;
 }
-#page0 .right .about .github {
+#page0 .right .about .iconList {
   opacity:0;
   animation:2s opacityAni 3.5s forwards;
+  font-family:'icon';
+  font-size:30px;
+}
+#page0 .irght .about .gitbug:hover {
+  color:#000;
 }
 #page1 .left .mySkill {
   width:100%;
@@ -148,17 +154,27 @@ body{
 .shadowR {
   box-shadow:-10px 0 5px rgba(0,0,0,0.5);
 }
-@keyframes aniLeft{
+@font-face {
+  font-family: 'icon';
+  src: url('../fonts/icomoon.eot');
+  src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.woff') format('woff'),
+  url('../fonts/icomoon.ttf') format('truetype'),
+  url('../fonts/icomoon.svg#NeuesBauenDemo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes aniLeft {
   to{
     transform:translateX(0);
   }
 }
-@keyframes aniRight{
+@keyframes aniRight {
   to{
     transform:translateX(0);
   }
 }
-@keyframes opacityAni{
+@keyframes opacityAni {
   from{
     opacity:0;
   }

@@ -48,6 +48,7 @@ for(var i=0;i<pageMax;i++){
 //滚轮事件
 scrollEvent(scrollUp,scrollDown);
 
+
 //技能透明度调整
 function pageTwoAni(){
   var json = {
@@ -78,8 +79,9 @@ function scrollEvent(fnUp,fnDown){
     document.onmousewheel=scroll;
   }
   function scroll(ev){
-    var oEvent=ev||window.event;
-    var bDown=true;
+    var oEvent = ev||window.event;
+    var bDown = true;
+    var timer = null;
     if(oEvent.wheelDelta){
       if(oEvent.wheelDelta<0){
         bDown=true;
@@ -100,14 +102,14 @@ function scrollEvent(fnUp,fnDown){
       if(playCheck) return false;
       playCheck = true;
       fnDown && fnDown();
-      window.setTimeout(moveEnd,1000);
     }
     else{
-    if(playCheck) return false;
-    playCheck = true;
+      if(playCheck) return false;
+      playCheck = true;
       fnUp && fnUp();
-      window.setTimeout(moveEnd,1000);
     }
+    window.clearTimeout(timer);
+    timer = window.setTimeout(moveEnd,1000);
     oEvent.preventDefault&&oEvent.preventDefault();
     return false;
   }
