@@ -110,11 +110,10 @@ body{
 #page1 .left .mySkill p span {
   border-radius:5px;
   padding:10px;
-  background:#37ddc4;
-  color:#fff;
+  background:#22c3aa;
+  color:rgba(255,255,255,0);
   font:20px/53px "Microsoft yahei";
   margin:0 5px;
-  opacity:0;
   transition:1s;
 }
 #page1 .right{

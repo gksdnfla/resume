@@ -67,7 +67,12 @@ function pageTwoAni(){
   var aLabel = document.getElementById('skill').getElementsByTagName('span');
 
   for(var i=0;i<aLabel.length;i++){
-    aLabel[i].style.opacity = json[aLabel[i].className];
+    (function(i){
+      window.setTimeout(function(){
+        aLabel[i].style.color = 'rgba(255,255,255,1)';
+        aLabel[i].style.background = 'rgba(55,221,196,'+json[aLabel[i].className]+')';
+      },i*100);
+    })(i);
   }
 };
 
