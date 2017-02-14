@@ -3,12 +3,6 @@ var pageCount = 0;
 var pageMax = 4;
 var playCheck = true;
 var oPageBtn = document.getElementById('pageBtn');
-//显示图片
-(function(){
-  window.onload = function(){
-    document.getElementById('profile').src = profile();
-  }
-})();
 //年龄计算
 (function(){
   var oDate = new Date();
