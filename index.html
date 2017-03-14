@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="styles/css/index.css">
 </head>
 <body>
-	<div class="page" id="page0">
+	<div class="page" id="page0" style="z-index:7;">
 		<div class="left"></div>
 		<div class="right shadowR">
 			<div class="about">
@@ -19,7 +19,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="page" id="page1">
+	<div class="page" id="page1" style="z-index:0;">
 		<div class="left">
 			<div id="skill" class="mySkill">
 				<h3>我的技能</h3>
@@ -28,13 +28,13 @@
 		</div>
 		<div class="right"></div>
 	</div>
-	<div class="page" id="page2">
+	<div class="page" id="page2" style="z-index:0;">
 		<div class="left"></div>
 		<div class="right">
 			<h3>我的经历</h3>
 			<div class="historyBox">
 				<div class="historyLine"></div>
-				<ul class="history">
+				<ul id="history" class="history">
 					<!-- 工作经验 -->
 					<li>
 						<span class="year time fl">2013年</span>
@@ -74,24 +74,25 @@
 					</li>
 					<li>
 						<span class="month time fl">6月</span>
-						<p class="fl">在韩国偶然看到培训班的课程，决定放弃留学，来到了上海。</p>
-					</li>
-					<li>
-						<span class="month time fl">9月</span>
-						<p class="fl">在培训班毕业，学到了很多基础，也知道了以后的路该怎么走。</p>
+						<p class="fl">在韩国留学，感觉学不到东西，准备上海。</p>
 					</li>
 					<li>
 						<span class="month time fl">10月</span>
-						<p class="fl">面试通过一家公司，开始上班（上海市联壁科技）。</p>
+						<p class="fl">在上海面试通过一家公司，开始上班（上海市联壁科技）。</p>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div class="page" id="page3">
-		<div class="left"></div>
+	<!-- <div class="page" id="page3">
+		<div class="left">
+			<h3>我的作品</h3>
+			<ol>
+				<li></li>
+			</ol>
+		</div>
 		<div class="right"></div>
-	</div>
+	</div> -->
 	<ul id="pageBtn"></ul>
 	<script type="text/JavaScript" src="scripts/index.js"></script>
 </body>

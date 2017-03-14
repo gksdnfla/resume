@@ -1,231 +1,272 @@
 body{
-  background:#000;
+	background:#000;
 }
 .page{
-  width:100%;
-  height:100%;
-  position:absolute;
-  left:0;
-  top:0;
-  transition:1s ease;
-  z-index:0;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	transition:1s ease;
+	z-index:0;
 }
 .page div.left,.page div.right{
-  width:50%;
-  min-width:500px;
-  height:100%;
-  position:absolute;
-  top:0;
-  background-color:#22c3aa;
-  background-repeat:no-repeat;
-  background-size:cover;
-  overflow:hidden;
-  transition:1s;
+	width:50%;
+	min-width:500px;
+	height:100%;
+	position:absolute;
+	top:0;
+	background-color:#22c3aa;
+	background-repeat:no-repeat;
+	background-size:cover;
+	overflow:hidden;
+	transition:1s;
 }
 .page div.left {
-  transform:translateX(-100%);
-  left:0;
+	transform:translateX(-100%);
+	left:0;
 }
 .page div.right {
-  background-position:100% 0;
-  transform:translateX(100%);
-  right:0;
+	background-position:100% 0;
+	transform:translateX(100%);
+	right:0;
 }
 #page0 .left{
-  background-image:url("../../statics/images/0.jpg");
-  animation:1s aniLeft forwards;
+	background-image:url("../../statics/images/0.jpg");
+	animation:1s aniLeft forwards;
 }
 #page0 .right{
-  animation:1s aniRight forwards;
+	animation:1s aniRight forwards;
 }
 #page0 .right .about {
-  width:300px;
-  height:400px;
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
-  background:none;
+	width:300px;
+	height:400px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	background:none;
 }
 #page0 .right .about img {
-  width:200px;
-  margin:0px auto 40px;
-  border-radius:50%;
+	width:200px;
+	margin:0px auto 40px;
+	border-radius:50%;
 }
 #page0 .right .about p {
-  margin-top:10px;
-  font-family:"Microsoft yahei";
-  text-align:center;
-  color:#fff;
+	margin-top:10px;
+	font-family:"Microsoft yahei";
+	text-align:center;
+	color:#fff;
 }
 #page0 .right .about p span {
-  padding:0 10px;
+	padding:0 10px;
 }
 #page0 .right .about .name {
-  margin-top:0;
-  font-size:20px;
-  line-height:1em;
-  color:#fff;
-  opacity:0;
-  animation:2s opacityAni 1.5s forwards;
+	margin-top:0;
+	font-size:20px;
+	line-height:1em;
+	color:#fff;
+	opacity:0;
+	animation:2s opacityAni 1.5s forwards;
 }
 #page0 .right .about .worker {
-  opacity:0;
-  animation:2s opacityAni 2s forwards;
+	opacity:0;
+	animation:2s opacityAni 2s forwards;
 }
 #page0 .right .about .old {
-  opacity:0;
-  animation:2s opacityAni 2.5s forwards;
+	opacity:0;
+	animation:2s opacityAni 2.5s forwards;
 }
 #page0 .right .about .mail {
-  opacity:0;
-  animation:2s opacityAni 3s forwards;
+	opacity:0;
+	animation:2s opacityAni 3s forwards;
 }
 #page0 .right .about .iconList {
-  opacity:0;
-  animation:2s opacityAni 3.5s forwards;
-  font-family:'icon';
-  font-size:30px;
+	opacity:0;
+	animation:2s opacityAni 3.5s forwards;
+	font-family:'icon';
+	font-size:30px;
 }
 #page0 .irght .about .gitbug:hover {
-  color:#000;
+	color:#000;
 }
 #page1 .left .mySkill {
-  width:100%;
-  height:500px;
-  position:absolute;
-  left:0;
-  top:50%;
-  margin-top:-250px;
+	width:100%;
+	height:500px;
+	position:absolute;
+	left:0;
+	top:50%;
+	margin-top:-250px;
 }
 #page1 .left .mySkill h3 {
-  text-align:center;
-  color:#fff;
-  font:40px/1 "Microsoft yahei";
-  padding-bottom:100px;
+	text-align:center;
+	color:#fff;
+	font:40px/1 "Microsoft yahei";
+	padding-bottom:100px;
 }
 #page1 .left .mySkill p {
-  text-align:center;
+	text-align:center;
 }
 #page1 .left .mySkill p span {
-  border-radius:5px;
-  padding:10px;
-  background:#22c3aa;
-  color:rgba(255,255,255,0);
-  font:20px/53px "Microsoft yahei";
-  margin:0 5px;
-  transition:1s;
+	border-radius:5px;
+	padding:10px;
+	background:#22c3aa;
+	color:rgba(255,255,255,0);
+	font:20px/53px "Microsoft yahei";
+	margin:0 5px;
+	transition:1s;
 }
 #page1 .right{
-  background-image:url("../../statics/images/1.jpg");
+	background-image:url("../../statics/images/1.jpg");
 }
 #page2 .left{
-  background-image:url("../../statics/images/2.jpg");
+	background-image:url("../../statics/images/2.jpg");
 }
 #page2 .right h3 {
-  text-align:center;
-  font:40px/1 "Microsoft yahei";
-  color:#fff;
-  padding:50px 0;
+	text-align:center;
+	font:40px/1 "Microsoft yahei";
+	color:#fff;
+	padding:50px 0;
 }
 #page2 .right .historyBox {
-  position:relative;
+	position:relative;
 }
 #page2 .right .historyBox .historyLine {
-  width:10px;
-  height:100%;
-  background-color:#1da08d;
-  border-radius:5px;
-  position:absolute;
-  top:0;
-  left:100px;
+	width:10px;
+	height:100%;
+	background-color:#1da08d;
+	border-radius:5px;
+	position:absolute;
+	top:0;
+	left:100px;
 }
 #page2 .right .historyBox .history {
-  position:relative;
-  padding-left:100px;
+	position:relative;
+	padding-left:100px;
 }
 #page2 .right .historyBox .history li {
-  overflow:hidden;
-  color:#fff;
-  padding:10px 0;
+	overflow:hidden;
+	color:#fff;
+	padding:10px 0;
+	position:relative;
 }
 #page2 .right .historyBox .history li p {
-  padding:5px;
-  border-radius:3px;
-  background-color:#36dbc2;
-  position:relative;
-  margin-left:10px;
+	height:20px;
+	padding:5px;
+	border-radius:3px;
+	background-color:#36dbc2;
+	margin-left:10px;
+	transform:scaleX(0);
+	transform-origin:0% 50%;
 }
 #page2 .right .historyBox .history li p:before {
-  content:"";
-  position:absolute;
-  top:10px;
-  left:-7px;
-  border-right:7px solid #36dbc2;
-  border-top:5px solid rgba(0,0,0,0);
-  border-bottom:5px solid rgba(0,0,0,0);
+	content:"";
+	position:absolute;
+	top:10px;
+	left:-7px;
+	border-right:7px solid #36dbc2;
+	border-top:5px solid rgba(0,0,0,0);
+	border-bottom:5px solid rgba(0,0,0,0);
 }
 #page2 .right .historyBox .history li span {
-  width:100px;
-  text-align:right;
-  padding:5px;
+	width:100px;
+	text-align:right;
+	padding:5px;
+	posistion:relative;
 }
-#page3 .right{
-  background-image:url("../../statics/images/3.jpg");
+#page3 .left h3 {
+	font:40px/1 "Microsoft yahei";
+	color:#fff;
+	text-align:center;
+	padding:100px 0;
+}
+#page3 .right {
+	background-image:url("../../statics/images/3.jpg");
 }
 #pageBtn {
-  position:absolute;
-  top:50%;
-  right:20px;
+	position:absolute;
+	top:50%;
+	right:20px;
 }
 #pageBtn li {
-  padding:5px 0;
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:rgba(255,255,255,0.3);
+	display:block;
+	cursor:pointer;
+	transition:1s;
+	margin:10px 0;
+	position:relative;
 }
-#pageBtn li span {
-  width:15px;
-  height:15px;
-  border-radius:50%;
-  background-color:#fff;
-  border:2px solid #000;
-  display:block;
-  cursor:pointer;
+#pageBtn li:hover:nth-child(1):before {
+	content:"我的介绍";
 }
-#pageBtn li span.active{
-  background:#000;
-  cursor:auto;
+#pageBtn li:hover:nth-child(2):before {
+	content:"我的技能";
+}
+#pageBtn li:hover:nth-child(3):before {
+	content:"我的经历";
+}
+#pageBtn li:hover:nth-child(4):before {
+	content:"我的作品";
+}
+#pageBtn li:hover:before {
+	width:4em;
+	font:12px/1 "Microsoft yahei";
+	color:#fff;
+	padding:5px;
+	background-color:#36dbc2;
+	border-radius:5px;
+	position:absolute;
+	right:30px;
+	top:0;
+}
+#pageBtn li:hover:after {
+	content:"";
+	position:absolute;
+	left:-10px;
+	top:5px;
+	border-left:7px solid #36dbc2;
+	border-top:5px solid rgba(0,0,0,0);
+	border-bottom:5px solid rgba(0,0,0,0);
+}
+#pageBtn li.active{
+	background-color:rgba(255,255,255,1);
+	cursor:auto;
 }
 .shadowL {
-  z-index:7;
-  box-shadow:10px 0 5px rgba(0,0,0,0.5);
+	z-index:7;
+	box-shadow:10px 0 5px rgba(0,0,0,0.5);
 }
 .shadowR {
-  box-shadow:-10px 0 5px rgba(0,0,0,0.5);
+	box-shadow:-10px 0 5px rgba(0,0,0,0.5);
 }
 @font-face {
-  font-family: 'icon';
-  src: url('../../statics/fonts/icomoon.eot');
-  src: url('../../statics/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-  url('../../statics/fonts/icomoon.woff') format('woff'),
-  url('../../statics/fonts/icomoon.ttf') format('truetype'),
-  url('../../statics/fonts/icomoon.svg#NeuesBauenDemo') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'icon';
+	src: url('../../statics/fonts/icomoon.eot');
+	src: url('../../statics/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+	url('../../statics/fonts/icomoon.woff') format('woff'),
+	url('../../statics/fonts/icomoon.ttf') format('truetype'),
+	url('../../statics/fonts/icomoon.svg#NeuesBauenDemo') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @keyframes aniLeft {
-  to {
-    transform:translateX(0);
-  }
+	to {
+		transform:translateX(0);
+	}
 }
 @keyframes aniRight {
-  to {
-    transform:translateX(0);
-  }
+	to {
+		transform:translateX(0);
+	}
 }
 @keyframes opacityAni {
-  from {
-    opacity:0;
-  }
-  to {
-    opacity:1;
-  }
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
 }
