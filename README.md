@@ -76,7 +76,7 @@ XSS, CSRF공격의 이해도가 깊음
 ```
 단지의 공기 데이터 수집, 관리 및 통계 시스템
 
-기술: React, Redux, Material UI, Socket.io, Express
+기술: React, Redux, Material UI, Socket.io, Express, Echarts
 형상관리: git
 ```
 
