@@ -67,7 +67,7 @@ XSS, CSRF공격의 이해도가 깊음
 ```
 시기 판매, 창고 관리 및 물류 관리 시스템
 
-기술: React, Redux, Material, Ant Design, node-sass, 微信公众号
+기술: React, Redux, Material UI, Ant Design, node-sass, 微信公众号
 형상관리: git
 ```
 
@@ -76,7 +76,7 @@ XSS, CSRF공격의 이해도가 깊음
 ```
 단지의 공기 데이터 수집, 관리 및 통계 시스템
 
-기술: React, Redux, Material, Socket.io, Express
+기술: React, Redux, Material UI, Socket.io, Express
 형상관리: git
 ```
 
