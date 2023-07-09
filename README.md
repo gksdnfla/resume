@@ -13,7 +13,7 @@ XSS, CSRF공격의 이해도가 깊음
 
 ## 근무경력
 
-### JSQuare
+### JSQuare 2022.12 ~ 현재까지
 
 - Spring boot기반 프로제트 유지보수
 - Back-End 수정도 담당함
