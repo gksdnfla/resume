@@ -13,7 +13,12 @@ XSS, CSRF공격의 이해도가 깊음
 
 ## 근무경력
 
-### 써모피셔(중국) 2018.03 ~ 2021.01
+### JSQuare
+
+- Spring boot기반 프로제트 유지보수
+- Back-End 수정도 담당함
+
+### Thermofisher(중국) 2018.03 ~ 2021.01
 
 - Scrum모형으로 개발
 - 면접관
@@ -44,7 +49,7 @@ XSS, CSRF공격의 이해도가 깊음
 ```
 상품약관 작성 및 수정, 버전 관리
 
-기술: Spring Boot, React
+기술: Spring Boot, Postgres, React, CKEditor
 형상관리: git
 ```
 
